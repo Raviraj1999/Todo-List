@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    border-bottom-color: #ff6b6b;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 8px 4px;
+  }
+  
+  button:hover {
+    background-color: #ff6b6b;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .check {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #26a69a;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .completed .check {
+    color: #4caf50;
+  }
+  
+  .delete {
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .delete:hover {
+    color: #ff6b6b;
+  }
+  
+  #taskCount {
+    color: #888;
+    margin-top: 8px;
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .completed {
+    opacity: 0.6;
+  }
+  
+  /* New button styles */
+  #completeAllButton, #clearButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 4px;
+    font-size: 14px;
+  }
+  
+  #completeAllButton:hover, #clearButton:hover {
+    background-color: #ff6b6b;
+  }
+  
